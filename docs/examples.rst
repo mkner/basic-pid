@@ -147,10 +147,9 @@ Wheel-Motor Velocity Controller
          
          # if there is an active signal
         if self._v_ref < 0:
-            
             # or in [1,100]
             #self._rate = constrain(self._rate_pid,1,100)
-            #USE THE ABS OF PID OUT FOR v_reg < 0 ?
+            #use abs of pid out for v_reg < 0?
             self._rate = constrain(self._rate_pid,0,100)
             
             if self._rate >0:
