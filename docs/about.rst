@@ -12,8 +12,16 @@ The controller implements timestep integration that is designed to be used in di
 
 There are 2 primary modes of operation:  **Integrative** and **Iterative**
 
-In **iterative mode**, the timestep integration is done outside the controller
-in the algorithm *that calls* the PID controller for the ouput of the PID at the current timestep.
+The PID controller supports 2 modes of operation: Integrative and Iterative
 
-In **integrative mode**, the timestep integration is done *inside* the controller and the output from the PID controller for the current timestep can be used directly, without further iterative integration, to be sent to the process plant as the current input signal or as a modified signal depending on the feedback system in use.
+In **integrative mode**, the timestep integrations are calculated inside the controller
+and the output from the PID controller for the current timestep is used directly or with
+modifications and sent to the device or process plant as the current input signal
+without further iterative integration.
+
+In **iterative mode**, the PID timestep integrations are manually calculated and
+updated outside the controller in the algorithm that calls the PID controller for
+the output of the PID at the current timestep.
+
+
 
