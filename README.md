@@ -4,8 +4,8 @@ A Python PID Controller For Discrete Time Regulators
 
 **Basic PID** is a classic PID controller that is easy to use, works and does the job.
 
-The PID controller implements timestep integration that is designed to be used in
-discretized time regulators and supports 2 modes of operation: **Integrative** and **Iterative**
+The PID controller s designed to be used in discretized time regulators and
+implements timestep integration that supports 2 modes of operation: **Integrative** and **Iterative**
 
 In **Integrative Mode**, the timestep integrations are calculated inside the controller
 and the output from the PID controller for the current timestep is used directly or with 
