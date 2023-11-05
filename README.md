@@ -1,4 +1,3 @@
-**basic-pid** 
 
 
 **Basic PID** is a classic PID controller that is easy to use, works and does the job.
