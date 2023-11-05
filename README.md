@@ -14,16 +14,17 @@ differential drive mobile robots when traversing a straight line path and
 ADVR (Angular Differential Velocity Regulator) for tracking a heading angle using typical
 motion control input signals (v,w) for linear & angular velocities.
 
-It supports 2 modes of operation: **Integrative** and **Iterative**
+The PID controller supports 2 modes of operation: **Integrative** and **Iterative**
 
-In **iterative mode**, the timestep integration for updating an input
-signal is done in the algorithm that calls the PID controller
-for the ouput of the PID at the current timestep.
+In **Integrative Mode**, the timestep integrations are calculated inside the controller
+and the output from the PID controller for the current timestep is used directly or with 
+modifications and sent to the device or process plant as the current input signal without
+further iterative integration.
 
-In **integrative mode**, the timestep integration is done inside the
-controller and the output from the PID controller for the
-current timestep is used directly to be sent to the process plant
-as the current input signal.
+In **Iterative Mode**, the PID timestep integrations are manually calculated and updated
+outside the controller in the algorithm that calls the PID controller for the output of
+the PID at the current timestep.
+
 
 Installation: 
 
