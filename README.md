@@ -7,13 +7,6 @@ A Python PID Controller For Discrete Time Regulators
 The PID controller implements timestep integration
 that is designed to be used in discretized time regulators.
 
-**Basic PID** has proven to be a tested, and reliable PID controller. It has been used, for example, 
-with mobile robotic systems for LVC (Linear Velocity Control) for regulating wheel velocities, 
-LVDR (Lateral Velocity Differential Regulator) for keeping the wheel velocities in sync for 
-differential drive mobile robots when traversing a straight line path and 
-ADVR (Angular Differential Velocity Regulator) for tracking a heading angle using typical
-motion control input signals (v,w) for linear & angular velocities.
-
 The PID controller supports 2 modes of operation: **Integrative** and **Iterative**
 
 In **Integrative Mode**, the timestep integrations are calculated inside the controller
@@ -24,6 +17,13 @@ further iterative integration.
 In **Iterative Mode**, the PID timestep integrations are manually calculated and updated
 outside the controller in the algorithm that calls the PID controller for the output of
 the PID at the current timestep.
+
+**Basic PID** has proven to be a tested, and reliable PID controller. It has been used, for example, 
+with mobile robotic systems for LVC (Linear Velocity Control) for regulating wheel velocities, 
+LVDR (Lateral Velocity Differential Regulator) for keeping the wheel velocities in sync for 
+differential drive mobile robots when traversing a straight line path and 
+ADVR (Angular Differential Velocity Regulator) for tracking a heading angle using typical
+motion control input signals (v,w) for linear & angular velocities.
 
 
 Installation: 
