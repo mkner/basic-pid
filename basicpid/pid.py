@@ -16,9 +16,9 @@ class BasicPid(Object):
      def __init__(self):
        super(BasicPid, self).__init__()
        self._name = "BasicPid"
-       self._desc = "Basic Discrete Time PID Controller"
-       self._vers = "v0.02.05" # "v0.02.03 <-- ... v0.01.11b1"  #"v0.01.11b1 from dev v0.01.07b"
-       self._about = "Basic Pid"
+       self._desc = "PID controller designed to be used in discretized time regulators"
+       self._vers = "v0.02.05" ## "v0.02.03 <-- ... v0.01.11b1"  #"v0.01.11b1 from dev v0.01.07b"
+       self._about = "BasicPid is an easy to use classic PID controller designed to be used in discretized time regulators"
           
        self._Kp = 1.0
        self._Ki = 0
