@@ -25,7 +25,8 @@ Or just:
 'v0.01.10a'
 
 >>> p.desc()
-'Basic Discrete Time PID Controller'
+'PID controller designed to be used in discretized time regulators'
+
 
 Wheel-Motor Velocity Controller
 *******************************
