@@ -11,7 +11,8 @@
 
 #from robo_base import Object
 
-class BasicPid(Object):
+class BasicPid(object): 
+#class BasicPid(Object): just use standard python object
      """Basic Python PID Controller """ 
      def __init__(self):
        super(BasicPid, self).__init__()
