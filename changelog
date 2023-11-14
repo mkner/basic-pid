@@ -1,5 +1,9 @@
 # ChangeLog
 
+2023-11-14 - 0.2.6  - release stable version package
+
+2023-11-14 - 0.2.6b - fix missing object id, test mode(s) convergence
+
 2023-11-14 - 0.2.6a - decouple derivation from robobase Object 
                       so robo-base is not required for installation
                       keep interface functions for vers(), desc(), et al
