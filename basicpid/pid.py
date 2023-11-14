@@ -16,6 +16,7 @@ class BasicPid(object):
      """Basic Python PID Controller """ 
      def __init__(self):
        super(BasicPid, self).__init__()
+       self._id = id(self)
        self._name = "BasicPid"
        self._desc = "Easy to use classic PID controller"
        self._vers = "v0.02.06a" ## "v0.02.03 <-- ... v0.01.11b1"  #"v0.01.11b1 from dev v0.01.07b"
