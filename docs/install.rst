@@ -12,7 +12,7 @@ To use this project, first install it using *pip*:
 
 The main python package download site is: `here <https://pypi.org/project/basic-pid/>`_
 
-BasicPID (as of version 0.2.6) has been decoupled from the requirement of installing **robo-base**
+**BasicPID** (as of version 0.2.6) has been decoupled from the requirement of installing **robo-base**
 and can be used as a standalone module.
 
 Previous versions required **robo-base** to be installed first. This is usually flagged as a 
