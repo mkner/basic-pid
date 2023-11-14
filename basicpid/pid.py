@@ -7,7 +7,7 @@
 #
 #
 
-from robobase import Object # as of 9/5
+#from robobase import Object # as of 9/5, decoupled as of 11/14
 
 #from robo_base import Object
 
@@ -16,13 +16,11 @@ class BasicPid(Object):
      def __init__(self):
        super(BasicPid, self).__init__()
        self._name = "BasicPid"
-       self._desc = "PID controller designed to be used in discretized time regulators"
+       self._desc = "Easy to use classic PID controller"
        self._vers = "v0.02.06a" ## "v0.02.03 <-- ... v0.01.11b1"  #"v0.01.11b1 from dev v0.01.07b"
        self._about = "BasicPid is an easy to use classic PID controller designed to be used in discretized time regulators"
 
-       # as of 0.2.6a functions from robobase.Object 
-       # so BasicPid is decoupled from that package
-    
+       #PID
        self._Kp = 1.0
        self._Ki = 0
        self._Kd = 0
@@ -41,8 +39,70 @@ class BasicPid(Object):
        
        self._setAllModesOff()
        self._mode_iterate = True # default summation by calling function
+     
+     # as of 0.2.6a functions from robobase.Object included here
+     # so BasicPid is decoupled from that package
+     
+     # info functions return objects
+     
+     def getWhoami(self):
+          return str(self._name+" "+self._vers) #+" "+self._model)
+     
+     def whoamiStr(self):
+          return self.getWhoami()
+     
+     def getId(self):
+          return self._id
+     
+     def getName(self):
+          return self._name
 
+     def getDesc(self):
+          return self._desc
+    
+     def getVersion(self):
+          return self._vers
+    
+     def getVers(self):
+          return self._vers
+    
+     def getAbout(self):
+          return self._about
+    
+     def setName(self,n):
+         self._name = n
+    
+     def setDesc(self,d):
+         self._desc = d
+         
+     def setAbout(self,a):
+         self._about = a
+         
+     # shell mode versions print  
+     
+     def id(self):
+          print(self._id)
+         
+     def whoami(self):
+          print(self._name,self._vers) #,self._model)
+          
+     def name(self):
+          print(self._name)
 
+     def desc(self):
+          print(self._desc)
+    
+     def version(self):
+          print(self._vers)
+    
+     def vers(self):
+          print(self._vers)
+    
+     def about(self):
+          print(self._about)
+          
+     # PID functions start here     
+     
      def reset(self):
          # reset for new run - clear out integrations
          # keeps gains intact
