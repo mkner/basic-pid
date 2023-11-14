@@ -1,3 +1,7 @@
 # ChangeLog
 
+2023-11-14 - 0.2.6a - decouple derivation from robobase Object 
+                      so robo-base is not required for installation
+                      keep interface functions for vers(), desc(), et al
+
 2023-11-14 - 0.2.5 - update changelog format
