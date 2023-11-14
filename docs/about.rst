@@ -5,7 +5,7 @@ About
 **Basic PID** is a classic PID controller that is easy to use, works and does the job.
 
 The PID controller is designed to be used in discretized time regulators and
-implements timestep integration that supports 2 modes of operation: **Integrative** and **Iterative**
+implements timestep integration that supports two modes of operation: **Integrative** and **Iterative**
 
 In **Integrative Mode**, the timestep integrations are calculated inside the controller
 and the output from the PID controller for the current timestep is used directly or with 
