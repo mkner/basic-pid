@@ -9,7 +9,7 @@ basic-pid - PID Controller for discretized time regulators
 # but 0.01.08d doesnt fly building from pyproject.toml
 
 
-__version__ = 'v0.02.05'
+__version__ = 'v0.02.06a'
 
 # import acts to export 
 
