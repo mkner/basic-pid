@@ -17,9 +17,12 @@ class BasicPid(Object):
        super(BasicPid, self).__init__()
        self._name = "BasicPid"
        self._desc = "PID controller designed to be used in discretized time regulators"
-       self._vers = "v0.02.05" ## "v0.02.03 <-- ... v0.01.11b1"  #"v0.01.11b1 from dev v0.01.07b"
+       self._vers = "v0.02.06a" ## "v0.02.03 <-- ... v0.01.11b1"  #"v0.01.11b1 from dev v0.01.07b"
        self._about = "BasicPid is an easy to use classic PID controller designed to be used in discretized time regulators"
-          
+
+       # as of 0.2.6a functions from robobase.Object 
+       # so BasicPid is decoupled from that package
+    
        self._Kp = 1.0
        self._Ki = 0
        self._Kd = 0
