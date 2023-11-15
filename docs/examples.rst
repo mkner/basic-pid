@@ -101,6 +101,9 @@ since the process does not react and its output can never stabilize to the refer
   1.3625
 
 
+In this example...
+
+.. code-block:: python
 
   pid.reset()
   pid.getGains()
