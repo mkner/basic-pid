@@ -67,6 +67,11 @@ Mode Examples
   pid.getGains()
   (1, 0.025, 0.0001)
 
+In this example, the process output is a constant fixed value that
+is not and never can be the reference. Shows the effect of timestep
+integrations being calculated internally with the PID controller. 
+Expect to see additive integrations gradually increase output without bound
+since the process does not react and its output can never stabilize to the reference.
   
   ref_sig = 1.5
   sig = 0.5
@@ -91,6 +96,24 @@ Mode Examples
   1.3125
   1.3375
   1.3625
+
+
+
+  pid.reset()
+  pid.getGains()
+  
+  ref_sig = 1
+  sig = 1
+  
+  for i in range(5): 
+    delay(500)
+    print(round( pid.get(ref_sig, sig) ,10))
+
+  0.0
+  0.0
+  0.0
+  0.0
+  0.0
 
 
 Wheel-Motor Velocity Controller
