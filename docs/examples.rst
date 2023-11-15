@@ -68,12 +68,12 @@ Mode Examples
   (1, 0.025, 0.0001)
 
 
-
 In this example, the process output is a constant fixed value that
 is not and never can be the reference. Shows the effect of timestep
 integrations being calculated internally with the PID controller. 
 Expect to see additive integrations gradually increase output without bound
 since the process does not react and its output can never stabilize to the reference.
+
 
 .. code-block:: python
 
