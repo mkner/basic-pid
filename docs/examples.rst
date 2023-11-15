@@ -27,6 +27,46 @@ Or just:
 >>> p.desc()
 'PID controller designed to be used in discretized time regulators'
 
+Mode Examples
+*************
+
+.. code-block:: python
+
+  from robotime.time import delay
+  from basicpid import BasicPid
+  
+  pid = BasicPid()
+  
+  pid.whoami()
+  BasicPid v0.02.06
+
+  #check default settings
+  pid.getGains()
+  (1.0, 0, 0)
+
+  pid.setGains(1,0.025,0.0001)
+
+  # check setttings
+  pid.getGains()
+  (1, 0.025, 0.0001)
+
+  # use integrate mode
+  pid.setIntegrateModeOn()
+
+  # check mode flags
+  pid.inIntegrateMode()
+  True
+
+  pid.inIterateMode()
+  False
+
+  # clears previous results, keeps gains intact
+  pid.reset()
+
+  #check
+  pid.getGains()
+  (1, 0.025, 0.0001)
+
 
 Wheel-Motor Velocity Controller
 *******************************
