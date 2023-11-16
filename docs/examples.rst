@@ -147,6 +147,25 @@ value it had stablized at.
   0.0
 
 
+Repeating the same basic numerical example above, but now use **Interative Mode**
+
+First, set the controller in **iterate** mode
+
+.. code-block:: python
+
+  # use iterative mode
+  pid.setIterateModeOn()
+
+  # check mode flags
+
+  # not this mode
+  pid.inIntegrateMode() # not this mode
+
+  # check really using iterate mode
+  pid.inIterateMode()
+
+
+
 Wheel-Motor Velocity Controller
 *******************************
 
