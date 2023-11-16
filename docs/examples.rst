@@ -160,9 +160,12 @@ First, set the controller in **Iterate** mode
 
   # not this mode
   pid.inIntegrateMode() # not this mode
+  False
 
   # check really using iterate mode
   pid.inIterateMode()
+  True
+
 
 
 
