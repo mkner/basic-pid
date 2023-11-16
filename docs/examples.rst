@@ -38,6 +38,7 @@ The following examples require **robotime**
 to be installed for the timing and delay functions.
 
 .. code-block:: python
+
    pip install robo-time
 
 
