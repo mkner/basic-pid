@@ -127,7 +127,9 @@ value it had stablized at.
 .. code-block:: python
 
   pid.reset()
+
   pid.getGains()
+  (1, 0.025, 0.0001)
 
 .. code-block:: python
 
