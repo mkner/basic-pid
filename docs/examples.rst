@@ -116,15 +116,23 @@ back in to the controller with each timestep. So its output can never stabilize 
   1.3625
 
 
-In this example...
+In this example check that the PID controller is detecting a
+stable state at reference properly when in **Integrative Mode**
+Since the output from the process is the same as the reference signal 
+sent to the PID controller, it will output nothing but zeros and there would 
+be no change to the input control signal being sent to the process from whatever 
+value it had stablized at.
+
 
 .. code-block:: python
 
   pid.reset()
   pid.getGains()
-  
+
+.. code-block:: python
+
   ref_sig = 1
-  sig = 1
+  output_sig = 1
   
   for i in range(5): 
     delay(500)
