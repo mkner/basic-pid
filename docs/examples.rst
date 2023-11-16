@@ -37,9 +37,9 @@ Mode Examples
 The following examples require **robotime**
 to be installed for the timing and delay functions.
 
-.. code-block:: python
+.. code-block:: console
 
-   pip install robo-time
+    $ pip install robo-time
 
 
 Getting around...
