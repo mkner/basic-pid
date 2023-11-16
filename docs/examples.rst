@@ -1,7 +1,7 @@
 
 
-Example
--------
+Examples
+--------
 
 Using the module
 ****************
@@ -10,25 +10,38 @@ For example:
 
 >>> import basicpid
 
->>> p = basicpid.BasicPid()
+>>> pid = basicpid.BasicPid()
 
 Or just:
 
 >>> from basicpid import Pid
 
->>> p = Pid()
+>>> pid = Pid()
 
->>> p.name()
+>>> pid.name()
 'BasicPid'
 
->>> p.vers()
-'v0.01.10a'
+>>> pid.vers()
+'v0.02.07'
 
->>> p.desc()
-'PID controller designed to be used in discretized time regulators'
+>>> pid.whoami()
+BasicPid v0.02.07
+
+>>> pid.desc()
+'Easy to use classic PID controller'
+
 
 Mode Examples
 *************
+
+The following examples require **robotime**
+to be installed for the timing and delay functions.
+
+.. code-block:: python
+   pip install robo-time
+
+
+Getting around...
 
 .. code-block:: python
 
