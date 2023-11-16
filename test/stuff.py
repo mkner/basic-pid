@@ -1,11 +1,13 @@
 
 # the usual
 
-import basic_pid
+#import basicpid
 
-from basic_pid import BasicPid
+from basicpid import BasicPid
 
 p = BasicPid()
+
+p.whoami()
 
 p.name()
 
