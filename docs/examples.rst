@@ -147,7 +147,7 @@ value it had stablized at.
   0.0
 
 
-Repeating the same basic numerical example above, but now use **Interative Mode**
+Repeating the same basic numerical example above, but now use **Iterative Mode**
 
 First, set the controller in **iterate** mode
 
