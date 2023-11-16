@@ -92,8 +92,8 @@ back in to the controller with each timestep. So its output can never stabilize 
 
 .. code-block:: python
 
-  ref_sig = 1.5
-  sig = 0.5
+  ref_sig = 1.5 # tracking reference signal
+  sig = 0.5 # output signal from the process or device
   
   for i in range(15): 
     delay(500)
