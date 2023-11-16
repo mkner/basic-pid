@@ -138,7 +138,7 @@ value it had stablized at.
   
   for i in range(5): 
     delay(500)
-    print(round( pid.get(ref_sig, sig) ,10))
+    print(round( pid.get(ref_sig, output_sig) ,10))
 
   0.0
   0.0
