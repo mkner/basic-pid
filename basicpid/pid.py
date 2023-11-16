@@ -1,7 +1,7 @@
 #
 #
 # BasicPid - Basic Python PID Controller  
-# for discretized time regulators
+# for discrete-time regulators
 #
 # (c) 2023, 2022  Mike Knerr
 #
