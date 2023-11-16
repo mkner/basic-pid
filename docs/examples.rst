@@ -97,7 +97,7 @@ back in to the controller with each timestep. So its output can never stabilize 
   
   for i in range(15): 
     delay(500)
-    print(round( pid.get(ref_sig, sig) ,10))
+    print(round( pid.get(ref_sig, output_sig) ,10))
 
   1.0126
   1.0375
