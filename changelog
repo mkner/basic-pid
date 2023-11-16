@@ -1,5 +1,10 @@
 # ChangeLog
 
+2023-11-16 - 0.2.7  - no longer requires robo-base to be installed
+                      can use as standalone module
+
+2023-11-15 - 0.2.6  - update documentation w/ examples
+
 2023-11-14 - 0.2.6  - release stable version package
 
 2023-11-14 - 0.2.6b - fix missing object id, test mode(s) convergence
