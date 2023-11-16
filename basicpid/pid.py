@@ -13,13 +13,13 @@
 
 class BasicPid(object): 
 #class BasicPid(Object): just use standard python object
-     """Basic Python PID Controller """ 
+     """PID controller for discrete-time regulators""" 
      def __init__(self):
        super(BasicPid, self).__init__()
        self._id = id(self)
        self._name = "BasicPid"
        self._desc = "Easy to use classic PID controller"
-       self._vers = "v0.02.07" ## "v0.02.03 <-- ... v0.01.11b1"  #"v0.01.11b1 from dev v0.01.07b"
+       self._vers = "v0.02.07"  ## "v0.02.03 <-- ... v0.01.11b1"  #"v0.01.11b1 from dev v0.01.07b"
        self._about = "BasicPid is an easy to use PID controller designed for discrete-time regulators"
 
        #PID
@@ -43,7 +43,7 @@ class BasicPid(object):
        self._mode_iterate = True # default summation by calling function
      
      # as of 0.2.6a functions from robobase.Object included here
-     # so BasicPid is decoupled from that package
+     # so BasicPid is decoupled from that module/package
      
      # info functions return objects
      
