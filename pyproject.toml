@@ -3,8 +3,13 @@
 [build-system]
 requires = [
    "setuptools",
-    "wheel",
-    "robo-base",]
+    "wheel",]
+
+    
+#requires = [
+#   "setuptools",
+#    "wheel",
+#    "robo-base",]
     
 # Minimum requirements to build package in venv w/ setuptools 
 #requires = [
