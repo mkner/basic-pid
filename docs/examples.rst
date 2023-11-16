@@ -93,7 +93,7 @@ back in to the controller with each timestep. So its output can never stabilize 
 .. code-block:: python
 
   ref_sig = 1.5 # tracking reference signal
-  output_sig = 0.5 # output signal or measurment value from the process or device
+  output_sig = 0.5 # output signal or measurement value from the process or device
   
   for i in range(15): 
     delay(500)
@@ -133,9 +133,9 @@ value it had stablized at.
 
 .. code-block:: python
 
-  ref_sig = 1
-  output_sig = 1
-  
+  ref_sig = 1 # tracking reference signal
+  output_sig = 1 # output signal or measurement value from the process or device
+
   for i in range(5): 
     delay(500)
     print(round( pid.get(ref_sig, output_sig) ,10))
