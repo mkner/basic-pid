@@ -149,7 +149,7 @@ value it had stablized at.
 
 Repeating the same basic numerical example above, but now use **Iterative Mode**
 
-First, set the controller in **iterate** mode
+First, set the controller in **Iterate** mode
 
 .. code-block:: python
 
