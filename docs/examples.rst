@@ -83,13 +83,20 @@ Getting around...
 
 The PID controller automatically calculates the error for the current timestep
 that is the difference between the reference signal and the actual process output.
-So using standard notation, **e(t) = r - y(t)** where **t** is the current timestep, 
-**e(t)** is the error for the current timestep, **r** is the reference 
-signal to track, and **y(t)** is the output at the current timestep from the process plant.
+Expressed using standard notation, that is **e(t) = r - y(t)** where **e(t)** is
+the error for the  current timestep, **t** is the current timestep, **r** is the
+reference signal to track, and **y(t)** is the output at the current timestep
+from the process plant.
 
-In **Integrate Mode** the PID controller automatically updates its current
-output using its state from the previous timestep so the integral term
-of the PID equation is calculated correctly.
+In **Integrate Mode** the PID controller updates its current
+output using its state from the previous timestep. 
+
+At each timestep, the three term PID equation is recalculated. 
+
+The proportional term is updated with the current error. The integral 
+term of the PID equation is reintegrated. And the derivative term is
+recalculated using the current error and the difference between
+consecutive timesteps.
 
 In this example, the process output is a constant fixed value that
 is not and never can be the reference. Shows the effect of timestep
