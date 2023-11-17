@@ -83,7 +83,7 @@ Getting around...
 
 The PID controller automatically calculates the error for the current timestep
 that is the difference between the reference signal and the actual process output.
-So using standard notation, **e(t) = r - y(t)** where **t* is the current timestep, 
+So using standard notation, **e(t) = r - y(t)** where **t**is the current timestep, 
 **e(t)** is the error for the current timestep, **r** is the reference 
 signal to track, and **y(t)** is the output at the current timestep from the process plant.
 
