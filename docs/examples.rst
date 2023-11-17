@@ -81,6 +81,15 @@ Getting around...
   pid.getGains()
   (1, 0.025, 0.0001)
 
+The PID controller automatically calculates the error for the current timestep
+that is the difference between the reference signal and the actual process output.
+So using standard notation, **e(t) = r - y(t)** where **t* is the current timestep, 
+e(t)** is the error for the current timestep, **r** is the reference 
+signal to track, and **y(t)** is the output at the current timestep from the process plant.
+
+In **Integrate Mode** the PID controller automatically updates its current
+output using its state from the previous timestep so the integral term
+of the PID equation is calculated correctly.
 
 In this example, the process output is a constant fixed value that
 is not and never can be the reference. Shows the effect of timestep
@@ -96,25 +105,35 @@ output can never stabilize to the reference.
   ref_sig = 1.5 # tracking reference signal
   output_sig = 0.5 # output signal or measurement value from the process or device
   
-  for i in range(15): 
+  for i in range(25): 
     delay(500)
     print(round( pid.get(ref_sig, output_sig) ,10))
 
-  1.0126
-  1.0375
-  1.0625
-  1.0875
-  1.1125
-  1.1375
-  1.1625
-  1.1875
-  1.2125
-  1.2375
-  1.2625
-  1.2875
-  1.3125
-  1.3375
-  1.3625
+    1.0126
+    1.0375
+    1.0625
+    1.0875
+    1.1125
+    1.1375
+    1.1625
+    1.1875
+    1.2125
+    1.2375
+    1.2625
+    1.2875
+    1.3125
+    1.3375
+    1.3625
+    1.3875
+    1.4125
+    1.4375
+    1.4625
+    1.4875
+    1.5125
+    1.5375
+    1.5625
+    1.5875
+    1.6125
 
 
 In this example check that the PID controller is detecting a
