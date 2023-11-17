@@ -86,8 +86,9 @@ In this example, the process output is a constant fixed value that
 is not and never can be the reference. Shows the effect of timestep
 integrations being calculated internally with the PID controller in **Integrative Mode**. 
 Expect to see additive integrations gradually increase the PID output without bound
-since the imaginary process does not react and a constant output from the process is fed
-back in to the controller with each timestep. So its output can never stabilize to the reference.
+since the imaginary process does not react and a constant, instead of the real output 
+from a process, is fed back in to the controller with each timestep. So its
+output can never stabilize to the reference.
 
 
 .. code-block:: python
