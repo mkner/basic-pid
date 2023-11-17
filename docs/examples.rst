@@ -92,7 +92,6 @@ In **Integrate Mode** the PID controller updates its current
 output using its state from the previous timestep. 
 
 At each timestep, the three term PID equation is recalculated. 
-
 The proportional term is updated with the current error. The integral 
 term of the PID equation is reintegrated. And the derivative term is
 recalculated using the current error and the difference between
