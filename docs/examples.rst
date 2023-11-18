@@ -98,6 +98,11 @@ that has passed between consecutive calls is determined by the program that is
 using the controller. This is the timestep. It is up to the calling program to
 decide how to interpret and utilize the results.
 
+Having this mode built into the controller makes it lot easier to concentrate
+on tuning the gains of the PID controller and using it to regulate a device and
+its applications for tracking, stability and robustness instead of getting
+bogged down the intricacies of its mathematical derivations and implementation in code. 
+
 
 In this example, the process output is a constant fixed value that
 is not and never can be the reference. Shows the effect of timestep
