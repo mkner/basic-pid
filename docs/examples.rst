@@ -164,35 +164,6 @@ with each timestep. So its output can never stabilize to the reference, and in t
     1.6125
 
 
-In this example check that the PID controller is detecting a
-stable state at reference properly when in **Integrative Mode**. 
-Since the output from the process is the same as the reference signal 
-sent to the PID controller, it will output nothing but zeros and there would 
-be no change to the input control signal being sent to the process from whatever 
-value it had stablized at.
-
-
-.. code-block:: python
-
-  pid.reset()
-
-  pid.getGains()
-  (1, 0.025, 0.0001)
-
-.. code-block:: python
-
-  ref_sig = 1 # tracking reference signal
-  output_sig = 1 # output signal or measurement value from the process or device
-
-  for i in range(5): 
-    delay(500)
-    print(round( pid.get(ref_sig, output_sig) ,10))
-
-  0.0
-  0.0
-  0.0
-  0.0
-  0.0
 
 
 Repeating the same example above, but now use **Iterative Mode**
