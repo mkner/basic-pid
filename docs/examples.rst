@@ -116,6 +116,20 @@ with each timestep. So its output can never stabilize to the reference, and in t
 
 .. code-block:: python
 
+  from robotime import delay
+  from basicpid import BasicPid
+
+  pid = BasicPid()
+
+  # use integrate mode
+  pid.setIntegrateModeOn()
+
+  pid.setGains(1,0.025,0.0001)
+
+  # clears previous results, keeps gains intact
+  # to start new run
+  pid.reset()
+
   ref_sig = 1.5 # tracking reference signal
   output_sig = 0.5 # output signal or measurement value from the process or device
   
