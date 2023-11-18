@@ -119,7 +119,7 @@ with each timestep. So its output can never stabilize to the reference, and in t
   output_sig = 0.5 # output signal or measurement value from the process or device
   
   for i in range(25): 
-    delay(500)
+    delay(500) # more realistic would be 20 ms (50 Hz) instead of 0.5 sec
     print(round( pid.get(ref_sig, output_sig) ,10))
 
     1.0126
