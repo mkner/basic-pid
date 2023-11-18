@@ -94,8 +94,8 @@ output using its state from the previous timestep.
 At each timestep, the three term PID equation is recalculated. 
 The proportional term is updated with the current error. The integral 
 term of the PID equation is reintegrated. And the derivative term is
-recalculated using the current error and the difference between
-consecutive timesteps.
+recalculated using the current error and errors from previous consecutive 
+timesteps. 
 
 In this example, the process output is a constant fixed value that
 is not and never can be the reference. Shows the effect of timestep
