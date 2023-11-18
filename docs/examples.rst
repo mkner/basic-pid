@@ -88,14 +88,16 @@ the error for the  current timestep, **t** is the current timestep, **r** is the
 reference signal to track, and **y(t)** is the output at the current timestep
 from the process plant.
 
-In **Integrate Mode** the PID controller updates its current
-output using its state from the previous timestep. 
+In **Integrate Mode** the PID controller updates its current output using its
+state from previous updates. At each timestep, the three term PID equation
+is recalculated. The proportional term is updated using the current error. The
+integral term of the PID equation is reintegrated. And the derivative term is
+recalculated with respect to the current error. A timestep is the time between
+calls to **getPid(...)** or an equivalent. The exact duration of the amount of time
+that has passed between consecutive calls is determined by the program that is
+using the controller. This is the timestep. It is up to the calling program to
+decide how to interpret and utilize the results.
 
-At each timestep, the three term PID equation is recalculated. 
-The proportional term is updated with the current error. The integral 
-term of the PID equation is reintegrated. And the derivative term is
-recalculated using the current error and errors from previous consecutive 
-timesteps. 
 
 In this example, the process output is a constant fixed value that
 is not and never can be the reference. Shows the effect of timestep
