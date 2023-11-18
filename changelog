@@ -1,9 +1,12 @@
 # ChangeLog
 
+
+2023-11-16 - 0.2.7  - update examples for integration modes
+
 2023-11-16 - 0.2.7  - update readme...
                       add examples for integration modes
                      
-2023-11-16 - 0.2.7  - no longer requires robo-base to be installed
+2023-11-16 - 0.2.7  - release version, no longer requires robo-base to be installed
                       can use as standalone module
 
 2023-11-15 - 0.2.6  - update documentation w/ examples
