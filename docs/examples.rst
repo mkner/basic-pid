@@ -97,12 +97,15 @@ calls to **getPid(...)** or an equivalent. The exact duration of the amount of t
 that has passed between consecutive calls is determined by the program that is
 using the controller. This is the timestep. It is up to the calling program to
 decide how to interpret and utilize the results. Normally this timestep interval 
-would be synced to the sampling frequency or rate of the device.
+would be synced to, for instance, the sampling frequency of a device sensor or a 
+required control signal update rate for a process device or both. 
 
 Having this mode built into the controller makes it lot easier to concentrate
 on tuning the gains of the PID controller and using it to regulate a device and
 its applications for tracking, stability and robustness instead of getting
 bogged down the intricacies of its mathematical derivations and implementation in code. 
+If more specific fine-tuning is needed to the timestep iteration process then the iterate
+mode can be used
 
 
 In the following example, the process output is a constant fixed value that
