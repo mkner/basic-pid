@@ -219,10 +219,6 @@ calls to **pid.get(...)**
     0.025
 
 
-This example repeats the previous one, *but* the  timestep integrations are
-handled manually. This allows maximum flexibility to fine-tune the PID 
-regulator for the application. 
-
 A great way to quickly see what type of control is necessary and what
 possible complexity will required of the PID controller for the process device it is being
 designed for is to start off start off with the PID controller in **Integrate Mode**.
@@ -230,6 +226,11 @@ Then concentrate on fine tuning the gains. Sometimes this may be enough. If not,
 since there is already working knowledge of the process and it responses, the PID 
 controller can be switched into **Iterate Mode** and algorithms and code can be developed
 to acheive the optimum required results.
+
+This example repeats the previous one, *but* the  timestep integrations are
+handled manually. This allows maximum flexibility to fine-tune the PID 
+regulator for the application. 
+
 
 .. code-block:: python
 
