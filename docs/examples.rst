@@ -253,6 +253,28 @@ calls to **pid.get(...)** The PID output will match the output when the PID cont
 is set in the automatic **Integrate Mode** as in the first example.
 
 
+.. code-block:: python
+
+  for i in range(10): 
+    
+    pid_out = pid.get(ref_sig, output_sig)
+    
+    # handle the iteration manually
+   
+    pid_iter = pid_out_prev + pid_out 
+    
+    # pid_control is the control input u(t) that gets sent to 
+    # the process plant either directly or with modifications
+    #  here just use the plain pid output at this timestep
+    pid_control = pid_iter 
+    
+    print(round( pid_control,10)) # the control input
+    
+    pid_out_prev = pid_iter 
+    delay(500) # more realistic would be 20 ms (50 Hz) instead of 0.5 sec
+
+
+
 
 Wheel-Motor Velocity Controller
 *******************************
