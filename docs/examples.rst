@@ -170,7 +170,8 @@ with each timestep. So its output can never stabilize to the reference, and in t
 
 
 
-Repeating the same example above, but now use **Iterative Mode**
+Repeating the same example above, with the same parameters
+but now use **Iterative Mode**
 
 First, set the controller in **Iterate** mode
 
@@ -178,8 +179,6 @@ First, set the controller in **Iterate** mode
 
   # use iterative mode
   pid.setIterateModeOn()
-
-  # check mode flags
 
   # not this mode
   pid.inIntegrateMode() # not this mode
@@ -189,6 +188,34 @@ First, set the controller in **Iterate** mode
   pid.inIterateMode()
   True
 
+  pid.reset() # but reuse previous gains
+  pid.getGains() # ck ok
+
+  ref_sig = 1.5 # tracking reference signal
+  output_sig = 0.5 # output signal or measurement value from the process or device
+
+Now run the loop. The PID output will fixate at constant value
+since there is no integration with the PID timestep outputs. 
+In this mode, the integrations would have to handled manually outside of the 
+calls to **pid.get(...)** 
+
+.. code-block:: python
+
+  for i in range(10): 
+    pid_out = pid.get(ref_sig, output_sig)
+    print(round( pid_out,10))
+    delay(500) # more realistic would be 20 ms (50 Hz) instead of 0.5 sec
+
+    1.0126
+    0.0249
+    0.025
+    0.025
+    0.025
+    0.025
+    0.025
+    0.025
+    0.025
+    0.025
 
 
 
