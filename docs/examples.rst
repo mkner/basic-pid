@@ -278,7 +278,9 @@ is set in the automatic **Integrate Mode** as in the first example.
     
     pid_out_prev = pid_iter 
     delay(500) # more realistic would be 20 ms (50 Hz) instead of 0.5 sec
-    
+
+.. code-block:: python
+
     1.0126
     1.0375
     1.0625
