@@ -190,6 +190,7 @@ First, set the controller in **Iterate** mode
 
   pid.reset() # but reuse previous gains
   pid.getGains() # ck ok
+  (1, 0.025, 0.0001)
 
   ref_sig = 1.5 # tracking reference signal
   output_sig = 0.5 # output signal or measurement value from the process or device
