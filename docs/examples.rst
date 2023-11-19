@@ -266,6 +266,7 @@ is set in the automatic **Integrate Mode** as in the first example.
     # pid_control is the control input u(t) that gets sent to 
     # the process plant either directly or with modifications
     # here just use the plain pid output at this timestep
+
     pid_control = pid_iter 
     
     print(round( pid_control,10)) # the control input
