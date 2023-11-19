@@ -10,7 +10,7 @@ To use this project, first install it using **pip**:
     $ pip install basic-pid
 
 
-The main python package download site is: `here <https://pypi.org/project/basic-pid/>`_
+The main python package download site is `here <https://pypi.org/project/basic-pid/>`_
 
 **BasicPID** as of version 0.2.7 no longer requires **robo-base** to be installed 
 and can be used as a standalone module.
