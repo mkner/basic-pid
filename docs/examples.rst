@@ -141,6 +141,8 @@ with each timestep. So its output can never stabilize to the reference, and in t
     print(round( pid_out,10))
     delay(500) # more realistic would be 20 ms (50 Hz) instead of 0.5 sec
 
+.. code-block:: python
+
     1.0126
     1.0375
     1.0625
@@ -206,6 +208,9 @@ calls to **pid.get(...)**
     pid_out = pid.get(ref_sig, output_sig)
     print(round( pid_out,10))
     delay(500) # 0.5 sec 
+
+.. code-block:: python
+
 
     1.0126
     0.0249
