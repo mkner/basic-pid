@@ -219,6 +219,39 @@ calls to **pid.get(...)**
     0.025
 
 
+This example repeats the previous one, *but* the  timestep integrations are
+handled manually. This allows maximum flexibility to fine-tune the PID 
+regulator for the application. 
+
+A great way to quickly see what type of control is necessary and what
+possible complexity will required of the PID controller for the process device it is being
+designed for is to start off start off with the PID controller in **Integrate Mode**.
+Then concentrate on fine tuning the gains. Sometimes this may be enough. If not, 
+since there is already working knowledge of the process and it responses, the PID 
+controller can be switched into **Iterate Mode** and algorithms and code can be developed
+to acheive the optimum required results.
+
+.. code-block:: python
+
+  #### handle integrations manually
+
+  # use iterative mode
+  pid.setIterateModeOn() # use iterate mode
+
+  pid.reset() # 
+  pid.getGains() # ck ok
+
+  ref_sig = 1.5 # tracking reference signal
+  output_sig = 0.5 # output signal or measurement value from the process or device
+  
+  pid_out_prev = 0 #need this
+  pid_control = 0
+
+Now run the loop. Here, the integrations are handled manually outside of the 
+calls to **pid.get(...)** The PID output will match the output when the PID controller 
+is set in the automatic **Integrate Mode** as in the first example.
+
+
 
 Wheel-Motor Velocity Controller
 *******************************
