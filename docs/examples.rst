@@ -272,8 +272,17 @@ is set in the automatic **Integrate Mode** as in the first example.
     
     pid_out_prev = pid_iter 
     delay(500) # more realistic would be 20 ms (50 Hz) instead of 0.5 sec
-
-
+    
+    1.0126
+    1.0375
+    1.0625
+    1.0875
+    1.1125
+    1.1375
+    1.1625
+    1.1875
+    1.2125
+    1.2375
 
 
 Wheel-Motor Velocity Controller
