@@ -169,7 +169,6 @@ with each timestep. So its output can never stabilize to the reference, and in t
 
 
 
-
 Repeating the same example above, with the same parameters
 but now use **Iterative Mode**
 
@@ -206,7 +205,7 @@ calls to **pid.get(...)**
   for i in range(10): 
     pid_out = pid.get(ref_sig, output_sig)
     print(round( pid_out,10))
-    delay(500) # more realistic would be 20 ms (50 Hz) instead of 0.5 sec
+    delay(500) # 0.5 sec 
 
     1.0126
     0.0249
