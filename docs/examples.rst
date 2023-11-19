@@ -173,7 +173,8 @@ with each timestep. So its output can never stabilize to the reference, and in t
 Repeating the same example above, with the same parameters
 but now use **Iterative Mode**
 
-First, set the controller in **Iterate** mode
+First, set the controller in **Iterate** mode and use the same 
+parameters as before.
 
 .. code-block:: python
 
