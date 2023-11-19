@@ -104,8 +104,8 @@ Having this mode built into the controller makes it lot easier to concentrate
 on tuning the gains of the PID controller and using it to regulate a device and
 its applications for tracking, stability and robustness instead of getting
 bogged down the intricacies of its mathematical derivations and implementation in code. 
-If more specific fine-tuning is needed to the timestep iteration process then the iterate
-mode can be used
+If more specific fine-tuning is needed to the timestep iteration process then the Iterate
+Mode can be used
 
 
 In the following example, the process output is a constant fixed value that
