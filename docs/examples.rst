@@ -33,7 +33,8 @@ BasicPid v0.02.07
 
 Mode Examples
 *************
-The following examples require **robotime**
+
+The examples need **robotime**
 to be installed for the timing and delay functions.
 
 See `documentation <https://robo-time.readthedocs.io/en/latest/>`_ for more.
@@ -42,8 +43,6 @@ Install as follows
 .. code-block:: console
 
     $ pip install robo-time
-
-
 
 Getting around...
 
