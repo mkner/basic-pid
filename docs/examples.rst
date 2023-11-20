@@ -225,7 +225,7 @@ calls to **pid.get(...)**
 
 
 A great way to quickly see what type of control is necessary and what
-possible complexity will required of the PID controller for the process device it is being
+possible complexity will be required of the PID controller for the process device it is being
 designed for is to start off with the PID controller in **Integrate Mode**.
 Then concentrate on fine tuning the gains. Sometimes this may be enough. If not, 
 since there is already working knowledge of the process and it responses, the PID 
