@@ -34,7 +34,8 @@ BasicPid v0.02.07
 Mode Examples
 *************
 The following examples require **robotime**
-to be installed for the timing and delay functions. See the `documentation <https://robo-time.readthedocs.io/en/latest/>`_ for more about the package.
+to be installed for the timing and delay functions.
+See the `documentation <https://robo-time.readthedocs.io/en/latest/>`_ for more about the package.
 
 .. code-block:: console
 
