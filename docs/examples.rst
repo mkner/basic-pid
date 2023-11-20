@@ -36,9 +36,9 @@ Mode Examples
 The following examples require **robotime**
 to be installed for the timing and delay functions.
 
-See the `documentation <https://robo-time.readthedocs.io/en/latest/>`_ for more.
+Can be installed as follows. See the `documentation <https://robo-time.readthedocs.io/en/latest/>`_ for more.
 
-Can be installed as follows
+
 
 .. code-block:: console
 
