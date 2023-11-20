@@ -38,11 +38,12 @@ to be installed for the timing and delay functions.
 
 See the `documentation <https://robo-time.readthedocs.io/en/latest/>`_ for more.
 
-Install as follows
+Can be installed as follows
 
 .. code-block:: console
 
     $ pip install robo-time
+
 
 
 Getting around...
