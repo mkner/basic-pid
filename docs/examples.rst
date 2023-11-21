@@ -310,6 +310,23 @@ is set in the automatic **Integrate Mode** as in the first example.
 Wheel-Motor Velocity Controller
 *******************************
 
+
+
+
+
+The motion control of Autonomous Mobile Robots (AMRs) with wheeled
+differential drive systems is one of the most complex and
+challenging in engineering.
+
+Even though the kinematics of motion given the typical inputs of velocity
+and orientation angular rate of change and its transformation into individual
+wheel velocities is well known, the realities of an actual electro-mechanical
+operational mobile robot in a physical environment introduces dynamic uncertainties 
+that need to be accurately handled by multiple interacting process control systems.
+
+The following example is from the working code set of 
+an operational Autonomous Mobile Robotic system 
+
 .. code-block:: python
 
   # example of wheel/motor velocity PID control
