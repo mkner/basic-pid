@@ -325,10 +325,10 @@ Wheel-Motor Velocity Controller
   #
 
   from robotime.clocks import Clock
-  from basicpid import BasicPid
   from roboutils import constrain
-  
 
+  from basicpid import Pid
+ 
   class WheelVelocity(IoScan):
 
     def __init__(self, wheel):
@@ -341,7 +341,7 @@ Wheel-Motor Velocity Controller
         self._wheel = wheel #contains motor 
         self.clock = Clock()
 
-        self.pid = BasicPid() # on ext interface
+        self.pid = Pid() # on ext interface
         
         self._v_ref = 0 # signal reference velocity
         self._v = 0 # current instantaneous velocity
