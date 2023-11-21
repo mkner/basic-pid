@@ -318,7 +318,7 @@ The motion control of Autonomous Mobile Robots (AMRs) with wheeled
 differential drive systems is one of the most complex and
 challenging in engineering.
 
-Even though the kinematics of motion given the typical inputs of velocity
+Even though the kinematics of motion given the typical inputs of linear velocity
 and orientation angular rate of change and its transformation into individual
 wheel velocities is well known, the realities of an actual operational 
 mobile robot in a physical environment introduces electro-mechanical dynamics
