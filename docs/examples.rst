@@ -112,7 +112,7 @@ Mode can be used
 
 In the following example, the process output is a constant fixed value that
 is not and never can be the reference. Shows the effect of timestep
-integrations being calculated internally with the PID controller in **Integrative Mode**. 
+integrations being calculated internally with the PID controller in **Integrate Mode**. 
 Expect to see additive integrations gradually increase the PID output, reach the tracking
 reference value, then continue to increase without bound since the imaginary process does not react
 and a constant, instead of the real output from a process, is fed back into the controller
