@@ -326,6 +326,7 @@ Wheel-Motor Velocity Controller
 
   from robotime.clocks import Clock
   from basicpid import BasicPid
+  from roboutils import constrain
   
 
   class WheelVelocity(IoScan):
