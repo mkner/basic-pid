@@ -320,8 +320,8 @@ challenging in engineering.
 
 Even though the kinematics of motion given the typical inputs of velocity
 and orientation angular rate of change and its transformation into individual
-wheel velocities is well known, the realities of an actual electro-mechanical
-operational mobile robot in a physical environment introduces dynamic uncertainties 
+wheel velocities is well known, the realities of an actual operational 
+mobile robot in a physical environment introduces electro-mechanical dynamics
 that need to be accurately handled by multiple interacting process control systems.
 
 The following example is from the working code set of 
