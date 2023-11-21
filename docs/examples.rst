@@ -230,7 +230,7 @@ A great way to quickly see what type of control is necessary and what
 possible complexity will be required of the PID controller for the process device it is being
 designed for is to start off with the PID controller in **Integrate Mode**.
 Then concentrate on fine tuning the gains. Sometimes this may be enough. If not, 
-since there is already working knowledge of the process and it responses, the PID 
+since there is already working knowledge of the process and its responses, the PID 
 controller can be switched into **Iterate Mode** and algorithms and code can be developed
 to acheive the optimum required results.
 
@@ -277,8 +277,17 @@ is set in the automatic **Integrate Mode** as in the first example.
     pid_control = pid_iter 
     
     print(round( pid_control,10)) # the control input
-    
-    pid_out_prev = pid_iter 
+
+    # save the current control input or just the current 
+    # integrated iteration of the PID output to 
+    # update for the next timestep using the unmodified pid_iter
+    # or potentially modified pid_control. depends on the proccess
+    # control requirements and how it responds to the regulator
+    # algorithm in this loop
+
+    pid_out_prev = pid_control # or pid_iter 
+
+    # timestep interval 
     delay(500) # more realistic would be 20 ms (50 Hz) instead of 0.5 sec
 
 .. code-block:: python
