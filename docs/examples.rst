@@ -324,6 +324,8 @@ wheel velocities is well known, the realities of an actual operational
 mobile robot in a physical environment introduces electro-mechanical dynamics
 that need to be accurately handled by multiple interacting process control systems.
 
+One of the most fundamental is the wheel velocity controller.
+
 The following example is from the working code set of 
 an operational Autonomous Mobile Robotic system 
 
