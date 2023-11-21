@@ -1,5 +1,7 @@
 # ChangeLog
 
+2023-11-20 - 0.2.7  - update RTD documentation iterative mode examples
+                      
 2023-11-19 - 0.2.7  - update RTD documentation with examples for integration
                       modes and for manual coding in iterative mode timestep 
                       iteration loops
