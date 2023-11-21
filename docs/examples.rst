@@ -135,6 +135,7 @@ with each timestep. So its output can never stabilize to the reference, and in t
   # to start new run
   pid.reset()
 
+  # init test parameters
   ref_sig = 1.5 # tracking reference signal
   output_sig = 0.5 # output signal or measurement value from the process or device
   
@@ -196,6 +197,7 @@ parameters as before.
   pid.getGains() # ck ok
   (1, 0.025, 0.0001)
 
+  # init test parameters
   ref_sig = 1.5 # tracking reference signal
   output_sig = 0.5 # output signal or measurement value from the process or device
 
@@ -249,6 +251,7 @@ regulator for the application.
   pid.reset() # 
   pid.getGains() # ck ok
 
+  # init test parameters
   ref_sig = 1.5 # tracking reference signal
   output_sig = 0.5 # output signal or measurement value from the process or device
   
