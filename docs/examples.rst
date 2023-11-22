@@ -338,18 +338,6 @@ The handler function is where the PID controller is used.
 
 .. code-block:: python
 
-  # example of wheel/motor velocity PID control
-  # using BasicPid in timestep iterative mode
-  # assume that IoScan is a class that has background process
-  # input signal processing & buffering capability
-  # and a component object of WheelVelocity is clock 
-  # that can return the uptime of the clock since
-  # instantiation of the WheelVelocity object 
-  # in milliseconds with the call clock.millis()
-  #
-  # (c) 2023, 2022 - Mike Knerr
-  #
-
   from robotime.clocks import Clock
   from roboutils import constrain
   from basicpid import Pid
