@@ -321,8 +321,8 @@ electro-mechanical dynamics and sensor feedback readings that need to be
 accurately handled by multiple interacting process control systems. 
 One of the most fundamental is the wheel velocity controller.
 
-The following example is of a wheel velocity controller that is from 
-adapted from the working code set of an operational Autonomous Mobile Robotic system.
+The following example of a wheel velocity controller is adapted from the
+working code set of an operational Autonomous Mobile Robotic system.
 
 The WheelVelocity class is derived from a base class that runs a handler
 function as a as a background I/O process. This type of process has a buffer and buffering
