@@ -321,22 +321,24 @@ electro-mechanical dynamics and sensor feedback readings that need to be
 accurately handled by multiple interacting process control systems. 
 One of the most fundamental is the wheel velocity controller.
 
-The following example of a wheel velocity controller class called
-WheelVelocity is from the working code set of an operational Autonomous
-Mobile Robotic system.
+The following example is of a wheel velocity controller that is from 
+adapted from the working code set of an operational Autonomous Mobile Robotic system.
 
-This controller is a WheelVelocity object that is constructed with and contains
+The WheelVelocity class is derived from a base class that runs a handler
+function as a as a background I/O process. This type of process has a buffer and buffering
+capabilities built in. It also calls the handler function at a time interval that
+can be set and changed. A WheelVelocity object is constructed with and contains
 a Wheel object that also runs as a dynamic process. The Wheel object contains
 a wheel encoder object, and a microcontroller object that has a functional interface 
 to send signals to a microcontroller board that handles digital PWM and the 
 actual analog electrical connections to drive the physical motors.
 
-The WheelVelocity object itself is derived from a base class that runs as a I/O process.
-This type of process has a buffer and buffering capabilities built in. It also
-calls a handler function at a time interval that can be set and changed. 
-The handler function is where the PID controller is used. It is running
-in **Iterate Mode** so the timestep integrations are handled in sync with the time
-interval used to call the handler function.
+The handler function is where the PID controller is used. 
+The PID is running in **Iterate Mode** so the timestep integrations
+are handled in sync with the time interval used to call the handler function.
+
+
+
 
 .. code-block:: python
 
