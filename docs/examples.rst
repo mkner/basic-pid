@@ -325,13 +325,13 @@ The following example of a wheel velocity controller class called
 WheelVelocity is from the working code set of an operational Autonomous
 Mobile Robotic system.
 
-The WheelVelocity object is constructed with and contains a Wheel object
-that also runs as a dynamic process. The Wheel object contains a wheel
-encoder object, and a microcontroller object that has a functional interface 
+This controller is a WheelVelocity object that is constructed with and contains
+a Wheel object that also runs as a dynamic process. The Wheel object contains
+a wheel encoder object, and a microcontroller object that has a functional interface 
 to send signals to a microcontroller board that handles digital PWM and the 
 actual analog electrical connections to drive the physical motors.
 
-A WheelVelocity object is derived from a base class that runs as a I/O process.
+The WheelVelocity object itself is derived from a base class that runs as a I/O process.
 This type of process has a buffer and buffering capabilities built in. It also
 calls a handler function at a time interval that can be set and changed. 
 The handler function is where the PID controller is used. 
