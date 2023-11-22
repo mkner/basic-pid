@@ -319,10 +319,10 @@ differential drive systems is one of the most complex and
 challenging in engineering.
 
 Even though the kinematics of motion given the typical inputs of linear velocity
-and orientation angular rate of change and its transformation into individual
+and orientation angular rate of change and their transform into individual
 wheel velocities is well known, the realities of an actual operational 
 mobile robot in a physical environment introduces electro-mechanical dynamics
-and sensor readings that need to be accurately handled by multiple interacting 
+and sensor feedback readings that need to be accurately handled by multiple interacting 
 process control systems.
 
 One of the most fundamental is the wheel velocity controller.
