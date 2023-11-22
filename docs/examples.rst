@@ -322,7 +322,8 @@ Even though the kinematics of motion given the typical inputs of linear velocity
 and orientation angular rate of change and its transformation into individual
 wheel velocities is well known, the realities of an actual operational 
 mobile robot in a physical environment introduces electro-mechanical dynamics
-that need to be accurately handled by multiple interacting process control systems.
+and sensor readings that need to be accurately handled by multiple interacting 
+process control systems.
 
 One of the most fundamental is the wheel velocity controller.
 
