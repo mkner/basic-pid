@@ -321,8 +321,8 @@ electro-mechanical dynamics and sensor feedback readings that need to be
 accurately handled by multiple interacting process control systems. 
 One of the most fundamental is the wheel velocity controller.
 
-In this example, a WheelVelocity class is derived from a base class that runs a handler
-function as a background I/O process. This type of process has a buffer and buffering
+In this example, a WheelVelocity class is derived from a I/O base class that runs a handler
+function as a background process. This type of process has a buffer and buffering
 capabilities built in. It also calls the handler function at a time interval that
 can be set and changed. A WheelVelocity object is constructed with and contains
 a Wheel object that also runs as a dynamic process. The Wheel object contains
