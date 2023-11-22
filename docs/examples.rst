@@ -319,7 +319,6 @@ their transform into individual wheel velocities is well known, the realities
 of an actual operational mobile robot in a physical environment introduces 
 electro-mechanical dynamics and sensor feedback readings that need to be
 accurately handled by multiple interacting process control systems. 
-
 One of the most fundamental is the wheel velocity controller.
 
 The following example of a wheel velocity controller class called
