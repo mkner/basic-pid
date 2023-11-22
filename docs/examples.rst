@@ -332,7 +332,13 @@ actual analog electrical connections to drive the physical motors.
 
 The handler function is where the PID controller is used. 
 The PID is running in **Iterate Mode** so the timestep integrations
-are handled in sync with the time interval used to call the handler function.
+are handled manually and in sync with the time interval used to call
+the handler function. The velocity supplied by the Wheel object
+is read and averaged via the buffer to smooth out some of fluctuations 
+that occur with the wheel encoders and their sensors. This average is used
+for the PID as the current velocity. The buffering parameters can be 
+adjusted based on the response of the wheels and their encoders from field
+testing. 
 
 The following is adapted from the working code an operational
 Autonomous Mobile Robotic system.
