@@ -334,7 +334,9 @@ actual analog electrical connections to drive the physical motors.
 The WheelVelocity object itself is derived from a base class that runs as a I/O process.
 This type of process has a buffer and buffering capabilities built in. It also
 calls a handler function at a time interval that can be set and changed. 
-The handler function is where the PID controller is used. 
+The handler function is where the PID controller is used. It is running
+in **Iterate Mode** so the timestep integrations are handled in sync with the time
+interval used to call the handler function.
 
 .. code-block:: python
 
