@@ -311,28 +311,31 @@ Wheel-Motor Velocity Controller
 *******************************
 
 
-
-
-
 The motion control of Autonomous Mobile Robots (AMRs) with wheeled
 differential drive systems is one of the most complex and
-challenging in engineering.
-
-Even though the kinematics of motion given the typical inputs of linear velocity
-and orientation angular rate of change and their transform into individual
-wheel velocities is well known, the realities of an actual operational 
-mobile robot in a physical environment introduces electro-mechanical dynamics
-and sensor feedback readings that need to be accurately handled by multiple interacting 
-process control systems.
+challenging in engineering. Even though the kinematics of motion given the
+typical inputs of linear velocityand orientation angular rate of change and 
+their transform into individual wheel velocities is well known, the realities
+of an actual operational mobile robot in a physical environment introduces 
+electro-mechanical dynamics and sensor feedback readings that need to be
+accurately handled by multiple interacting process control systems. 
 
 One of the most fundamental is the wheel velocity controller.
 
-The following example frm is a wheel velocity controller and is from the working code set of an operational
-Autonomous Mobile Robotic system and
+The following example of a wheel velocity controller class called
+WheelVelocity is from the working code set of an operational Autonomous
+Mobile Robotic system.
 
-The WheelVelocity object is constructed with and contains a Wheel object that also runs as a dynamic process. The Wheel object contains a wheel encoder object, and a microcontroller object that has a functional interface to send signals to a microcontroller board that handles digital PWM and the actual analog electrical connections to drive the physical motors.
+The WheelVelocity object is constructed with and contains a Wheel object
+that also runs as a dynamic process. The Wheel object contains a wheel
+encoder object, and a microcontroller object that has a functional interface 
+to send signals to a microcontroller board that handles digital PWM and the 
+actual analog electrical connections to drive the physical motors.
 
-A WheelVelocity object is derived from a base class that runs as a I/O process. This type of process has a buffer and buffering capabilities built in. It also calls a handler function at a time interval that can be set and changed. The handler function is where the PID controller is used. 
+A WheelVelocity object is derived from a base class that runs as a I/O process.
+This type of process has a buffer and buffering capabilities built in. It also
+calls a handler function at a time interval that can be set and changed. 
+The handler function is where the PID controller is used. 
 
 .. code-block:: python
 
