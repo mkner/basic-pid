@@ -321,10 +321,7 @@ electro-mechanical dynamics and sensor feedback readings that need to be
 accurately handled by multiple interacting process control systems. 
 One of the most fundamental is the wheel velocity controller.
 
-The following example of a wheel velocity controller is adapted from the
-working code set of an operational Autonomous Mobile Robotic system.
-
-The WheelVelocity class is derived from a base class that runs a handler
+In this example, a WheelVelocity class is derived from a base class that runs a handler
 function as a as a background I/O process. This type of process has a buffer and buffering
 capabilities built in. It also calls the handler function at a time interval that
 can be set and changed. A WheelVelocity object is constructed with and contains
@@ -337,6 +334,8 @@ The handler function is where the PID controller is used.
 The PID is running in **Iterate Mode** so the timestep integrations
 are handled in sync with the time interval used to call the handler function.
 
+The following is adapted from the working code an operational
+Autonomous Mobile Robotic system.
 
 
 
