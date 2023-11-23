@@ -338,7 +338,11 @@ is read and averaged via the buffer to smooth out some of fluctuations
 that occur with the wheel encoders and their sensors. This average is used
 for the PID as the current velocity. The buffering parameters can be 
 adjusted based on the response of the wheels and their encoders from field
-testing. 
+testing. While the handler is running, the reference velocity that is 
+the velocity the wheel is set to run at, can change at any time and is 
+read in sync with with current velocity reading and the PID iteration in the 
+handler function.
+
 
 The following is adapted from the working code an operational
 Autonomous Mobile Robotic system.
