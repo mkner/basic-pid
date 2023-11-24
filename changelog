@@ -1,5 +1,8 @@
 # ChangeLog
 
+2023-11-22 - 0.2.7  - update RTD documentation for Wheel Velocity example
+                      add roboutils to may be required for examples
+
 2023-11-20 - 0.2.7  - update RTD documentation iterative mode examples
                       
 2023-11-19 - 0.2.7  - update RTD documentation with examples for integration
