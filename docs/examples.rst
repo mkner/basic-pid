@@ -379,14 +379,15 @@ Autonomous Mobile Robotic system.
         self._vers = "v0.01.02"  # 0.09 w/ velocity
 
         self._wheel = wheel #contains motor 
-        self.clock = Clock()
+        #self.clock = Clock() #use the one from IoScan 
 
-        self.pid = Pid() # on ext interface
+        self.pid = Pid() # wheel can access PID directly from ext interface
         
         self._v_ref = 0 # signal reference velocity
         self._v = 0 # current instantaneous velocity
-        self._v_avg = 0
-        
+        self._v_avg = 0 
+
+        # init for PID in Iterate mode
         self._pid_out = 0
         self._pid_out_prev = 0
         
@@ -394,14 +395,14 @@ Autonomous Mobile Robotic system.
         self._rate_prev = 0
         self._rate_pid = 0
     
-        self._vmax = 0.50 # of wheels/motors
+        self._vmax = 0.50 # of wheels/motors usually m/s
         
-        self._default_scanfreq = 50
-        self._default_bufsize = 5
+        self._default_scanfreq = 50 # Hz
+        self._default_bufsize = 5 
         # clock from IoScan
         # used in interation process thread
-        self._dur_start_time = self.clock.millis()
-        self._dur = None
+        self._dur_start_time = self.clock.millis() 
+        self._dur = None # can be set 
      
         #init
         #self.deActivate()
@@ -476,9 +477,10 @@ Autonomous Mobile Robotic system.
             if self._rate >0:
              self._wheel.reverse(self._rate)
              
-        self._rate_prev = self._rate 
-            
-        if self._dur != None:
+        self._rate_prev = self._rate # update for next iteration
+
+        # either there is a current stop time or just continuous motion
+        if self._dur != None: 
           if (self.clock.millis() - self._dur_start_time) > self._dur:
               self._wheel.stop()
               self._dur = None
