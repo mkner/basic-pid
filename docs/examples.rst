@@ -337,10 +337,12 @@ function as a background process. This type of I/O process object has a buffer a
 capabilities built in. It also calls the handler function at a time interval that
 can be set and changed at any time. A WheelVelocity object is constructed with access to 
 the Wheel object also runs as a dynamic process. It is the Wheel object itself contains an
-instance of WheelVelocity, a wheel encoder object, and a motor object that has a
-functional interface to send signals to a microcontroller board object that handles
-digital PWM and the actual analog electrical connections to drive the physical motors. 
-This example focuses on the velocity handler only.
+instance of WheelVelocity, in addition to a wheel encoder object, and a motor object.  It is
+the motor object controls the speed and direction, either forward or reverse, for its physical
+motor. It has a functional interface to send signals to a microcontroller board
+object that handles digital PWM via an interface and connection to the actual microcontroler
+hardware that controls the analog electrical connections to drive a physical motor. 
+This example focuses on the velocity handler only!
 
 The handler function is where the PID controller is used. 
 The PID is running in **Iterate Mode** so the timestep integrations
