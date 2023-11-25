@@ -336,9 +336,9 @@ In this example, a WheelVelocity class is derived from a I/O base class that run
 function as a background process. This type of I/O process object has a buffer and buffering
 capabilities built in. It also calls the handler function at a time interval that
 can be set and changed at any time. A WheelVelocity object is constructed with access to 
-the Wheel object also runs as a dynamic process. It is the Wheel object itself contains an
-instance of WheelVelocity, in addition to a wheel encoder object, and a motor object.  It is
-the motor object controls the speed and direction, either forward or reverse, for its physical
+a Wheel object that also runs as a dynamic process. It is the Wheel object itself that actually
+contains an instance of WheelVelocity, in addition to a wheel encoder object, and a motor object.
+It is the motor object controls the speed and direction, either forward or reverse, for its physical
 motor. It has a functional interface to send signals to a microcontroller board
 object that handles digital PWM via an interface and connection to the actual microcontroler
 hardware that controls the analog electrical connections to drive a physical motor. 
