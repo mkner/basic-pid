@@ -340,7 +340,7 @@ a Wheel object that also runs as a dynamic process. It is the Wheel object itsel
 contains an instance of WheelVelocity, in addition to a wheel encoder object, and a motor object.
 It is the motor object controls the speed and direction, either forward or reverse, for its physical
 motor. It has a functional interface to send signals to a microcontroller board
-object that handles digital PWM via an interface and connection to the actual microcontroler
+object that handles digital PWM via an interface and connection to the actual microcontroller
 hardware that controls the analog electrical connections to drive a physical motor. 
 This example focuses on the velocity handler only!
 
