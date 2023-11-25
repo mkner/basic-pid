@@ -338,7 +338,7 @@ capabilities built in. It also calls the handler function at a time interval tha
 can be set and changed at any time. A WheelVelocity object is constructed with access to 
 a Wheel object that also runs as a dynamic process. It is the Wheel object itself that actually
 contains an instance of WheelVelocity, in addition to a wheel encoder object, and a motor object.
-It is the motor object controls the speed and direction, either forward or reverse, for its physical
+It is the motor object that controls the speed and direction, either forward or reverse, for its physical
 motor. It has a functional interface to send signals to a microcontroller board
 object that handles digital PWM via an interface and connection to the actual microcontroller
 hardware that controls the analog electrical connections to drive a physical motor. 
