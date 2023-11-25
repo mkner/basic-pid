@@ -333,13 +333,14 @@ accurately handled by multiple interacting process control systems.
 One of the most fundamental is the wheel velocity controller.
 
 In this example, a WheelVelocity class is derived from a I/O base class that runs a handler
-function as a background process. This type of process has a buffer and buffering
+function as a background process. This type of I/O process object has a buffer and buffering
 capabilities built in. It also calls the handler function at a time interval that
-can be set and changed. A WheelVelocity object is constructed with and contains
-a Wheel object that also runs as a dynamic process. The Wheel object contains
-a wheel encoder object, and a microcontroller object that has a functional interface 
-to send signals to a microcontroller board that handles digital PWM and the 
-actual analog electrical connections to drive the physical motors.
+can be set and changed at any time. A WheelVelocity object is constructed with access to 
+the Wheel object also runs as a dynamic process. It is the Wheel object itself contains an
+instance of WheelVelocity, a wheel encoder object, and a motor object that has a
+functional interface to send signals to a microcontroller board object that handles
+digital PWM and the actual analog electrical connections to drive the physical motors. 
+This example focuses on the velocity handler only.
 
 The handler function is where the PID controller is used. 
 The PID is running in **Iterate Mode** so the timestep integrations
@@ -347,12 +348,12 @@ are handled manually and in sync with the time interval used to call
 the handler function. The velocity supplied by the Wheel object
 is read and averaged via the buffer to smooth out some of fluctuations 
 that occur with the wheel encoders and their sensors. This average is used
-for the PID as the current velocity. The buffering parameters can be 
-adjusted based on the response of the wheels and their encoders from field
-testing. While the handler is running, the reference velocity that is 
-the velocity the wheel is set to run at, can change at any time and is 
+for the PID as the current velocity, unless buffering has been turned off.
+The buffering parameters can be adjusted based on the response of the wheels
+and their encoders from field testing. While the handler is running, the reference
+velocity that is  the velocity the wheel is set to run at, can change at any time and is 
 read in sync with with current velocity reading and the PID iteration in the 
-handler function.
+handler function. 
 
 
 The following is adapted from the working code an operational
