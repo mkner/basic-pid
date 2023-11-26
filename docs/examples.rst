@@ -365,7 +365,15 @@ measured wheel velocity, averaged or not to generate the PID output for this ite
 How these velocities are fed into the controller depends on whether the reference velocity 
 is positive, negative or zero. Since in **Iterate Mode**, the current timestep PID evaluation
 is calculated manually from the current PID controller output at *this* timestep and the previous
-timestep evaluation. 
+timestep evaluation. In this case, the evauation is a rate value that will be sent to the wheel object
+as a forward or reverse signal. It is first constrained to a bounded set of values for the particular
+input range of the underlying the motor controller interface in wheel. This is typical of either motor
+control for mobile robots or throttle controls for autonomous vehicles. Here it is the constrained
+rate that is fed back into the PID evaluation at the next timestep. Whether a modified input signal 
+to the process device, in this case a wheel and its motor controls, is recycled or the unmodified
+PID timestep equation output is used depends on the process, its performance with the controller and
+the application requirements. There is a lot of flexibilty with the **Iterate Mode** to manually 
+fine-tune the regulator and how it integrates over its sequence of timestep intervals.
 
 
 .. code-block:: python
