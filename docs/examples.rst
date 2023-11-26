@@ -373,7 +373,7 @@ rate that is fed back into the PID evaluation at the next timestep. Whether a mo
 to the process device, in this case a wheel and its motor controls, is recycled or the unmodified
 PID timestep equation output is used depends on the process, its performance with the controller and
 the application requirements. There is a lot of flexibilty with the **Iterate Mode** to manually 
-fine-tune the regulator and how it integrates over its sequence of timestep intervals.
+fine-tune the regulator and how it performs over its sequence of timestep intervals.
 
 
 .. code-block:: python
