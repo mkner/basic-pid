@@ -363,8 +363,9 @@ The example is adapted from code in an operational Autonomous Mobile Robotic sys
 At each timestep, the PID controller uses a reference tracking velocity and the current
 measured wheel velocity, averaged or not to generate the PID output for this iteration.
 How these velocities are fed into the controller depends on whether the reference velocity 
-is positive, negative or zero. Since in **Iterate Mode**, the current PID output is calculated
-from the previous timestep output and the current PID evaluation.
+is positive, negative or zero. Since in **Iterate Mode**, the current timestep PID evaluation
+is calculated manually from the current PID controller output at *this* timestep and the previous
+timestep evaluation. 
 
 
 .. code-block:: python
