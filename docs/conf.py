@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "PID Controller for Discrete Time"
+project = "Basic PID Controller"
 copyright = "(c) 2023 Mike Knerr"
 author = ""
 
