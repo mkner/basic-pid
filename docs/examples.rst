@@ -342,7 +342,7 @@ It is the motor object that controls the speed and direction, either forward or 
 motor. It has a functional interface to send signals to a microcontroller board
 object that handles digital PWM via an interface and connection to the actual microcontroller
 hardware that controls the analog electrical connections to drive a physical motor. 
-This code focuses on the velocity handler only!
+This code example focuses on the velocity handler only!
 
 The handler function is where the PID controller is used. 
 The PID is running in **Iterate Mode** so the timestep integrations
