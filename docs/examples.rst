@@ -375,7 +375,7 @@ the application requirements. There is a lot of flexibilty with the **Iterate Mo
 fine-tune the regulator and how it performs over a sequence of timestep intervals.
 
 
-The example is adapted from code in an operational Autonomous Mobile Robotic system
+This example is adapted from code in an operational Autonomous Mobile Robotic system
 
 .. code-block:: python
 
