@@ -1,6 +1,6 @@
 
-Whats Next
-----------
+Future
+------
 
 Whats Next
 **********
