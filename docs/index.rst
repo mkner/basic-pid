@@ -13,6 +13,8 @@ A classic PID controller for discrete-time regulators that is is easy to use, wo
    install
    interface
    examples
+   future
+
 
 
 
