@@ -374,6 +374,9 @@ PID timestep equation output is used depends on the process, its performance wit
 the application requirements. There is a lot of flexibilty with the **Iterate Mode** to manually 
 fine-tune the regulator and how it performs over a sequence of timestep intervals.
 
+As always, keep in mind, discrete data is countable and continous data is measurable. Processes and 
+their controls, in mobile robotics, is always a balancing act of both representations of time and its
+related events.
 
 This example is adapted from code in an operational Autonomous Mobile Robotic system
 
