@@ -2,7 +2,7 @@
 About
 *****
 
-**BasicPID** is a classic PID controller that is easy to use, works and does the job.
+**BasicPID** is a classic PID controller for Python that is easy to use, works and does the job.
 
 The PID controller is designed to be used in discrete-time regulators and
 implements timestep integration that supports two modes of operation: **Integrative** and **Iterative**
