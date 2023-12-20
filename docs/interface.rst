@@ -116,7 +116,9 @@ Interface
 
     Function call makes sense semantically. For example
 
-    if(pid.inIntegrateMode()): 
+.. code-block:: python
+
+  if(pid.inIntegrateMode()): 
        # really want the other mode
        pid.setIterateModeOn()
        # do something else if required
@@ -181,6 +183,17 @@ Interface
      |  D  - result of derivative term evaluation
 
    :rtype: tuple
+
+   By retrieving the updated components of the output of
+   the PID equation can be assembled manually in standard form
+   as follows
+
+.. code-block:: python
+
+  p = Kp*P + Ki*I + Kd*D
+
+   or customized to any other form or variation as required
+   for the control application
 
 
  .. method::  pid(signal_ref, signal)
