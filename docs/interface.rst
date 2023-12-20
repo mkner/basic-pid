@@ -117,9 +117,9 @@ Interface
     Function call makes sense semantically. For example
 
 
-.. code-block:: python
+   .. code-block:: python
 
-  if(pid.inIntegrateMode()): 
+     if(pid.inIntegrateMode()): 
        # really want the other mode
        pid.setIterateModeOn()
        # do something else if required
