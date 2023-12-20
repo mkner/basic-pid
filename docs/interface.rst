@@ -89,7 +89,6 @@ Interface
     :param: None
     :return: None
 
-
  .. method:: setIterateModeOn()
 
    Turns iteration mode on
