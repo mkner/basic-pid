@@ -123,13 +123,12 @@ Interface
 
   pid = BasicPid()
 
-
- .. code-block:: python
-
-     if(pid.inIntegrateMode()): 
+  if(pid.inIntegrateMode()): 
        # really want the other mode
        pid.setIterateModeOn()
        # do something else if required
+
+
 
 
  .. method:: inIterateMode()
