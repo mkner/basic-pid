@@ -76,7 +76,7 @@ Interface
     :rtype: float
 
 
-.. method:: setIntegrateModeOn()
+ .. method:: setIntegrateModeOn()
 
     Turns integrative mode on
 
