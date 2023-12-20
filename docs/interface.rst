@@ -114,21 +114,15 @@ Interface
     :return: **True** if in integrative mode and **False** if not
     :rtype: Bool
 
-    Function call makes sense semantically. For example
+    Function call makes sense semantically. 
+    For example
 
-.. code-block:: python
+    pid = BasicPid()
 
-  from robotime import delay
-  from basicpid import BasicPid
-
-  pid = BasicPid()
-
-  if(pid.inIntegrateMode()): 
+    if(pid.inIntegrateMode()): 
        # really want the other mode
        pid.setIterateModeOn()
        # do something else if required
-
-
 
 
  .. method:: inIterateMode()
@@ -195,10 +189,7 @@ Interface
    the PID equation can be assembled manually in standard form
    as follows
 
-
-.. code-block:: python
-
-  p = Kp*P + Ki*I + Kd*D
+   p = Kp*P + Ki*I + Kd*D
 
    or customized to any other form or variation as required
    for the control application
