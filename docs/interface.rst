@@ -170,7 +170,16 @@ Interface
     Returns tuple form of the components of the PID equation
     *since last evaluation* that was initiated by calling **getPid(...)** or 
     an equivalent. 
-    
+
+    By retrieving the updated components of the output of
+    the PID equation can be assembled manually in standard form
+    as follows
+
+    **p = Kp*P + Ki*I + Kd*D**
+
+    or customized to any other form or variation as required
+    for the control application
+
     :param: signal_ref - reference signal value
     :param: signal  - current measured signal value returned by process 
     :return: components of PID equation evaluation (Kp P, Ki, I, Kd, D)
@@ -184,16 +193,7 @@ Interface
 
    :rtype: tuple
 
-   By retrieving the updated components of the output of
-   the PID equation can be assembled manually in standard form
-   as follows
-
-   p = Kp*P + Ki*I + Kd*D
-
-   or customized to any other form or variation as required
-   for the control application
-
-
+ 
  .. method::  pid(signal_ref, signal)
    
     short form for **getPid(...)**
