@@ -89,6 +89,8 @@ Interface
     :param: None
     :return: None
 
+
+
  .. method:: setIterateModeOn()
 
    Turns iteration mode on
@@ -106,14 +108,15 @@ Interface
    :return: None
 
 
+
  .. method:: inIntegrateMode()
 
     Check if using integrative mode for PID evaluation
 
     :return: **True** if in integrative mode and **False** if not
     :rtype: Bool
-    
-  
+
+
  .. method:: inIterateMode()
 
     check if using iterative mode for PID evaluation
