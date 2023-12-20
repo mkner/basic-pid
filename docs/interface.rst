@@ -116,8 +116,15 @@ Interface
 
     Function call makes sense semantically. For example
 
+.. code-block:: python
 
-   .. code-block:: python
+  from robotime import delay
+  from basicpid import BasicPid
+
+  pid = BasicPid()
+
+
+ .. code-block:: python
 
      if(pid.inIntegrateMode()): 
        # really want the other mode
@@ -188,6 +195,7 @@ Interface
    By retrieving the updated components of the output of
    the PID equation can be assembled manually in standard form
    as follows
+
 
 .. code-block:: python
 
