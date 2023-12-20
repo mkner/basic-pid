@@ -113,7 +113,7 @@ Interface
 
     :return: **True** if in integrative mode and **False** if not
     :rtype: Bool
-
+    
     Function call makes sense semantically. 
     For example
 
