@@ -109,10 +109,17 @@ Interface
 
  .. method:: inIntegrateMode()
 
-    check if using integrative mode for PID evaluation
+    Check if using integrative mode for PID evaluation
 
     :return: **True** if in integrative mode and **False** if not
     :rtype: Bool
+
+    Function call makes sense semantically. For example
+
+    if(pid.inIntegrateMode()): 
+       # really want the other mode
+       pid.setIterateModeOn()
+       # do something else if required
 
 
  .. method:: inIterateMode()
