@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = "Basic PID Controller"
-copyright = "(c) 2023 Mike Knerr"
+copyright = "(c) 2023-2024 Mike Knerr"
 author = ""
 
 
